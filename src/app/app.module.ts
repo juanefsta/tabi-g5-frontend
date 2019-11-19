@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatPasswordStrengthModule } from '@angular-material-extensions/core';
 
 @NgModule({
   declarations: [
@@ -13,8 +12,7 @@ import { MatPasswordStrengthModule } from '@angular-material-extensions/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatPasswordStrengthModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
