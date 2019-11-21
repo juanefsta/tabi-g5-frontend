@@ -5,14 +5,14 @@
     <h1 class="nav-title">TABI</h1>
 </nav>
 <div class="sidenav">
-    <a [routerLink]="['/prov']">Home</a>
-    <a href="/prov">Provincia</a>
-    <a href="#clients">Ciudad</a>
-    <a href="#contact">Contacto</a>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a href="/provincia">Provincia</a>
+    <a href="/clients">Ciudad</a>
+    <a href="/contact">Contacto</a>
 </div>
   
 <div class="main">
-<app-home></app-home>
+    <router-outlet #routerOutlet="outlet"></router-outlet>
 </div>
 
 <router-outlet></router-outlet>
