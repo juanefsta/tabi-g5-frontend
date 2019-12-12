@@ -1,5 +1,4 @@
-export class CentroAtencion {
-    Id : number;
+export class Centro {
     Nombre : string;
     Categoria : string;
     Subcategoria : string;

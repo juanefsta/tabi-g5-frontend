@@ -1,18 +1,20 @@
-<nav class="toolbar navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">
-      <img class="imgnav d-inline-block align-top" src="favicon.ico">
-    </a>
-    <h1 class="nav-title">TABI</h1>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a href="home">
+    <img class="imgnav d-inline-block align-top" src="favicon.ico">
+  </a>
+  <div class="collapse navbar-collapse">
+    <ul id="navBar" class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="propuesta">Propuesta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="informes">Informes</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<div class="sidenav">
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a href="/provincia">Provincia</a>
-    <a href="/clients">Ciudad</a>
-    <a href="/contact">Contacto</a>
-</div>
-  
-<div class="main">
-    <router-outlet #routerOutlet="outlet"></router-outlet>
-</div>
-
 <router-outlet></router-outlet>
+<footer id="footerText" class="container">
+  <hr>
+  <p>&copy; Grupo 5 - UNLP Informática</p>
+</footer>

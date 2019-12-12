@@ -4,4 +4,11 @@ export class ApplicationConstants {
 
     // Comisarías
     public static GET_COMISARIAS = 'api/comisarias/';
+
+    // Centros
+    public static GET_CENTROS = 'api/centros/';
+
+    // Municipios
+    public static GET_MUNICIPIOS = 'api/municipios/';
+    public static GET_MUNICIPIOSSINCENTROATENCION = 'api/municipios/sinCentroAtencion'
 }

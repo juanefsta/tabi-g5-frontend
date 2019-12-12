@@ -1,19 +1,19 @@
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { IComisariaService } from './interfaces/comisaria.iface';
-import { Comisaria } from '../shared/models/comisaria.model';
+import { ICentroService } from './interfaces/centros.iface';
+import { Centro } from '../shared/models/centro-atencion.model';
 import { HttpService } from '../config/http.service';
 import { ApplicationConstants } from '../../assets/applicationConstants.enum';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ComisariaService implements IComisariaService {
+export class CentroService implements ICentroService {
 
 
   constructor(private httpService: HttpService) { }
 
-  GetAllComisarias(): Observable<Comisaria[]> {
-    return this.httpService.DoGet(ApplicationConstants.GET_COMISARIAS);
+  GetAllCentros(): Observable<Centro[]> {
+    return this.httpService.DoGet(ApplicationConstants.GET_CENTROS);
   }
 }

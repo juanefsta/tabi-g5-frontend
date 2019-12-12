@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e0e0e0;}
+body {
+  padding-top: 3.5rem;
+}
 
 .toolbar{
     position: inherit;
@@ -17,7 +19,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     color: #ceb3e4;
 }
 .imgnav{
-    height: 100%;
+    height: 4rem;
 }
 
 .sidenav {
