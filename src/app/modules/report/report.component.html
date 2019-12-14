@@ -1,0 +1,50 @@
+ <!-- <div class="container">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Centros de atención por municipio
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="single" [cardColor]="cardColor"
+                (select)="onSelect($event)">
+            </ngx-charts-number-card>            
+            <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
+                [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
+            </ngx-charts-linear-gauge>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Gastos de la provincia
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>  -->
+
+<ul style="display: grid;">
+    <li>
+        <h2>Centros de atención por municipio</h2>
+        
+        <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="single" [cardColor]="cardColor"
+            (select)="onSelect($event)">
+        </ngx-charts-number-card>
+    </li>
+    <li>
+        <h2>Municipios sin centro de atención</h2>
+        <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
+            [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
+        </ngx-charts-linear-gauge>
+    </li>
+    <li>
+        <h2>Gastos de provincia </h2>
+        <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
+            [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
+        </ngx-charts-linear-gauge>
+    </li>
+</ul>
