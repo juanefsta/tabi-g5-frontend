@@ -1,0 +1,14 @@
+#presentacionText{   
+   margin-top: 3rem;
+   margin-bottom: 5rem;
+}
+
+#informesButton{
+   background-color: purple;
+   border-color: purple;
+   float: right;
+}
+
+#infoBasicaText{
+   margin-top: 3rem;
+}

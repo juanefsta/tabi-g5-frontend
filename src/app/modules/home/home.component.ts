@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute }     from '@angular/router';
+import { ComisariaService } from 'src/app/services/comisaria.service';
+import { Comisaria } from 'src/app/shared/models/comisaria.model';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,17 @@ import { ActivatedRoute }     from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  public comisarias: Comisaria[] = [];
   constructor(
-    private route: ActivatedRoute
+    private _comisariaService: ComisariaService
   ) { }
 
   ngOnInit() {
+    // this._comisariaService.GetAllComisarias()
+    // .subscribe( (res:any) => {
+    //   Object.assign(this.comisarias, res.body.data);
+    // });;
+    
   }
 
 }

@@ -1,0 +1,34 @@
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Listado de municipios
+            </mat-panel-title>
+            <mat-panel-description>
+                Centros de atención a la mujer por municipio
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <filtered-list></filtered-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Informe detallado
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-tab-group>
+            <mat-tab label="Municipios sin centros">
+                <mun-sin-centro></mun-sin-centro>
+            </mat-tab>
+            <mat-tab label="Municipios con centros">
+                <mun-con-centro></mun-con-centro>
+            </mat-tab>
+            <mat-tab label="Atención Línea 144">
+                <!-- <atencion-linea></atencion-linea> -->
+            </mat-tab>
+        </mat-tab-group>
+    </mat-expansion-panel>
+</mat-accordion>

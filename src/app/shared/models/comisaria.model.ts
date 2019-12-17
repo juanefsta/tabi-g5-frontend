@@ -1,3 +1,3 @@
 export class Comisaria {
-    Municipio : string;
+    Partido : string;
 }
