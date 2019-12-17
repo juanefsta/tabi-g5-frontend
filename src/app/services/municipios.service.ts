@@ -19,4 +19,7 @@ export class MunicipiosService implements IMunicipiosService {
   GetAllMunicipiosSinCentrosDeAtencion(): Observable<Municipio[]> {
     return this.httpService.DoGet(ApplicationConstants.GET_MUNICIPIOSSINCENTROATENCION);
   }
+  GetMunicipioByNombre(nombre: String):  Observable<Municipio> {
+    return this.httpService.DoGet(ApplicationConstants.GET_MUNICIPIOBYNAME + nombre);
+  }
 }

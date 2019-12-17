@@ -10,5 +10,6 @@ export class ApplicationConstants {
 
     // Municipios
     public static GET_MUNICIPIOS = 'api/municipios/';
-    public static GET_MUNICIPIOSSINCENTROATENCION = 'api/municipios/sinCentroAtencion'
+    public static GET_MUNICIPIOSSINCENTROATENCION = 'api/municipios/sinCentroAtencion/'
+    public static GET_MUNICIPIOBYNAME = 'api/municipios/'
 }

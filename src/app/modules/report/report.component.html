@@ -1,50 +1,34 @@
- <!-- <div class="container">
-    <mat-accordion>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Centros de atención por municipio
-                </mat-panel-title>
-                <mat-panel-description>
-                </mat-panel-description>
-            </mat-expansion-panel-header>
-            <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="single" [cardColor]="cardColor"
-                (select)="onSelect($event)">
-            </ngx-charts-number-card>            
-            <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
-                [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
-            </ngx-charts-linear-gauge>
-        </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Gastos de la provincia
-                </mat-panel-title>
-                <mat-panel-description>
-                </mat-panel-description>
-            </mat-expansion-panel-header>
-        </mat-expansion-panel>
-    </mat-accordion>
-</div>  -->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Listado de municipios
+            </mat-panel-title>
+            <mat-panel-description>
+                Centros de atención a la mujer por municipio
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <filtered-list></filtered-list>
+    </mat-expansion-panel>
 
-<ul style="display: grid;">
-    <li>
-        <h2>Centros de atención por municipio</h2>
-        
-        <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="single" [cardColor]="cardColor"
-            (select)="onSelect($event)">
-        </ngx-charts-number-card>
-    </li>
-    <li>
-        <h2>Municipios sin centro de atención</h2>
-        <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
-            [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
-        </ngx-charts-linear-gauge>
-    </li>
-    <li>
-        <h2>Gastos de provincia </h2>
-        <ngx-charts-linear-gauge [view]="view" [scheme]="colorScheme" [max]="135    " [value]="value"
-            [previousValue]="previousValue" (select)="onSelect($event)" [units]="units">
-        </ngx-charts-linear-gauge>
-    </li>
-</ul>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Informe detallado
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-tab-group>
+            <mat-tab label="Municipios sin centros">
+                <mun-sin-centro></mun-sin-centro>
+            </mat-tab>
+            <mat-tab label="Municipios con centros">
+                <mun-con-centro></mun-con-centro>
+            </mat-tab>
+            <mat-tab label="Atención Línea 144">
+                <!-- <atencion-linea></atencion-linea> -->
+            </mat-tab>
+        </mat-tab-group>
+    </mat-expansion-panel>
+</mat-accordion>
