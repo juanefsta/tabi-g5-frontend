@@ -12,4 +12,8 @@ export class ApplicationConstants {
     public static GET_MUNICIPIOS = 'api/municipios/';
     public static GET_MUNICIPIOSSINCENTROATENCION = 'api/municipios/sinCentroAtencion/'
     public static GET_MUNICIPIOBYNAME = 'api/municipios/'
+
+    // Lineas
+    public static GET_LLAMADASPORMUNICIPIO = 'api/linea/municipios/';
+
 }

@@ -16,17 +16,26 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs'
 import { MunicipioSinCentroComponent } from './mun-sin-centro/mun-sin-centro.component';
 import { MunicipioConCentroComponent } from './mun-con-centro/mun-con-centro.component';
+import { LlamadasFilteredListComponent } from './llamadas-filtered-list/llamadas-filtered-list.component';
+import { AtencionLineaComponent } from './atencion-linea/atencion-linea.component';
+import { HorizontalBarTopicsComponent } from './horizontal-bar-topics/horizontal-bar-topics.component';
 @NgModule({
   declarations: [
     ReportComponent,
     MunicipioSinCentroComponent,
     MunicipioConCentroComponent,
-    FilteredListComponent
+    FilteredListComponent,
+    LlamadasFilteredListComponent,
+    AtencionLineaComponent,
+    HorizontalBarTopicsComponent
   ],
   exports: [
     FilteredListComponent,
+    LlamadasFilteredListComponent,
     MunicipioSinCentroComponent,
-    MunicipioConCentroComponent
+    MunicipioConCentroComponent,
+    AtencionLineaComponent,
+    HorizontalBarTopicsComponent
   ],
   imports: [
     CommonModule,
@@ -47,8 +56,11 @@ import { MunicipioConCentroComponent } from './mun-con-centro/mun-con-centro.com
   ],
   entryComponents: [
     FilteredListComponent,
+    LlamadasFilteredListComponent,
     MunicipioSinCentroComponent,
-    MunicipioConCentroComponent
+    MunicipioConCentroComponent,
+    AtencionLineaComponent,
+    HorizontalBarTopicsComponent
   ]
 })
 export class ReportModule { }

@@ -6,13 +6,13 @@
 </mat-form-field>
 <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
-        <ng-container matColumnDef="nombre">
+        <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Municipio </th>
-            <td mat-cell [ngStyle]="{'backgroundColor': row.cantCentros === 0 ? 'darksalmon' : '#bf9bce'}" *matCellDef="let row"> {{row.nombre}} </td>
+            <td mat-cell [ngStyle]="{'backgroundColor': 250 > row.value >= 1 ? '#bf9bce' : 'darksalmon'}" *matCellDef="let row"> {{row.name}} </td>
         </ng-container>
-        <ng-container matColumnDef="cantCentros">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Cantidad de Centros </th>
-            <td mat-cell [ngStyle]="{'backgroundColor': row.cantCentros === 0 ? 'darksalmon' : '#bf9bce'}" *matCellDef="let row"> {{row.cantCentros}} </td>
+        <ng-container matColumnDef="value">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Cantidad de llamadas </th>
+            <td mat-cell [ngStyle]="{'backgroundColor': 250 > row.value >= 1 ? '#bf9bce' : 'darksalmon'}" *matCellDef="let row"> {{row.value}} </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
