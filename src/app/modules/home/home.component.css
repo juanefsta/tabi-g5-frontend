@@ -12,3 +12,14 @@
 #infoBasicaText{
    margin-top: 3rem;
 }
+
+.example-card {
+   max-width: 400px;
+   background-color: burlywood;
+ }
+ 
+ .example-header-image {
+   background-image: url('http://datos.gob.ar/img/twitter_card.png');
+   background-size: cover;
+ }
+ 
