@@ -21,5 +21,11 @@ export class MunicipiosService implements IMunicipiosService {
   }
   GetMunicipioByNombre(nombre: String):  Observable<Municipio> {
     return this.httpService.DoGet(ApplicationConstants.GET_MUNICIPIOBYNAME + nombre);
+  }  
+  GetCantidadSinCentro():  Observable<number> {
+    return this.httpService.DoGet(ApplicationConstants.GET_CANTSINCENTRO);
+  }  
+  GetCantidadConCentro():  Observable<number> {
+    return this.httpService.DoGet(ApplicationConstants.GET_CANTCONCENTRO);
   }
 }

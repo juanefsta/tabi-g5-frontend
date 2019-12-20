@@ -1,4 +1,9 @@
 export class NgChartModel {
-    name : String;
-    value : Number;
+    name : string;
+    value : number;
+    
+    constructor (name: string, value: number){
+        this.name = name;
+        this.value = value;
+    }
 }

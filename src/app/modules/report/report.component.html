@@ -1,4 +1,4 @@
-<mat-accordion>
+<!-- <mat-accordion>
     <mat-expansion-panel>
         <mat-expansion-panel-header>
             <mat-panel-title>
@@ -19,14 +19,6 @@
             <mat-panel-description>
             </mat-panel-description>
         </mat-expansion-panel-header>
-        <mat-tab-group>
-            <mat-tab label="Municipios sin centros">
-                <mun-sin-centro></mun-sin-centro>
-            </mat-tab>
-            <mat-tab label="Municipios con centros">
-                <mun-con-centro></mun-con-centro>
-            </mat-tab>
-        </mat-tab-group>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
@@ -40,4 +32,12 @@
         </mat-expansion-panel-header>
         <atencion-linea></atencion-linea>
     </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
+<mat-tab-group>
+    <mat-tab label="Municipios">
+        <app-municipios></app-municipios>
+    </mat-tab>
+    <mat-tab label="Línea 144">
+        <app-linea></app-linea>
+    </mat-tab>
+</mat-tab-group>

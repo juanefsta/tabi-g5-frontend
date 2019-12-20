@@ -19,6 +19,8 @@ import { MunicipioConCentroComponent } from './mun-con-centro/mun-con-centro.com
 import { LlamadasFilteredListComponent } from './llamadas-filtered-list/llamadas-filtered-list.component';
 import { AtencionLineaComponent } from './atencion-linea/atencion-linea.component';
 import { HorizontalBarTopicsComponent } from './horizontal-bar-topics/horizontal-bar-topics.component';
+import { LineaModule } from '../linea/linea.module';
+import { MunicipiosModule } from '../municipios/municipios.module';
 @NgModule({
   declarations: [
     ReportComponent,
@@ -52,7 +54,9 @@ import { HorizontalBarTopicsComponent } from './horizontal-bar-topics/horizontal
     NgxChartsModule,
     MatInputModule,
     MatIconModule,
-    MatSortModule
+    MatSortModule,
+    LineaModule,
+    MunicipiosModule
   ],
   entryComponents: [
     FilteredListComponent,
