@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LineaTelefonicaService } from 'src/app/services/lineaTelefonica.service';
 import { t_violencia, vinculo, sexo_victima,totales } from 'src/app/modules/report/horizontal-bar-topics/data'
 @Component({
     selector: 'horizontal-bar-topics',
@@ -34,7 +33,7 @@ export class HorizontalBarTopicsComponent implements OnInit {
     colorScheme = {
         domain: ['red', 'green', 'yellow', 'purple', 'blue', 'pink', 'brown']
     };
-    constructor(private _lineaService: LineaTelefonicaService) {
+    constructor() {
         Object.assign(this, { t_violencia });
         Object.assign(this, { vinculo });
         Object.assign(this, { sexo_victima });
