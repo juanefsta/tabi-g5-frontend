@@ -8,7 +8,7 @@ export class NumberCardComponent {
 
 
   single: any[];
-  view: any[] = [700, 400];
+  view: any[] = [250, 250];
 
   constructor() {
    // Object.assign(this, {  });
