@@ -1,21 +1,20 @@
-<ngx-charts-advanced-pie-chart
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="victima_sexo"
-  [gradient]="gradient"
-  (select)="onSelect($event)"
-  (activate)="onActivate($event)"
-  (deactivate)="onDeactivate($event)"
-  >
-</ngx-charts-advanced-pie-chart>
-
-<ngx-charts-advanced-pie-chart
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="sexo_agresor"
-  [gradient]="gradient"
-  (select)="onSelect($event)"
-  (activate)="onActivate($event)"
-  (deactivate)="onDeactivate($event)"
-  >
-</ngx-charts-advanced-pie-chart>
+<div class="row" style="margin-left: -15%;">
+  <div class="col-sm" style="margin-bottom: -10%;">
+    <ngx-charts-advanced-pie-chart class="as"[view]="view" [scheme]="colorScheme" [results]="victima_sexo" [gradient]="gradient"
+      (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+    </ngx-charts-advanced-pie-chart>
+  </div>
+  <div class="col-sm" style="align-self: center;">
+    <p>Géneros registrados de lxs víctimas</p>
+  </div>
+</div>
+<div class="row" style="margin-left: -15%;"> 
+  <div class="col-sm">
+    <ngx-charts-advanced-pie-chart [view]="view" [scheme]="colorScheme" [results]="sexo_agresor" [gradient]="true"
+      (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+    </ngx-charts-advanced-pie-chart>
+  </div>
+  <div class="col-sm" style="align-self: center;">
+    <p>Géneros registrados de lxs agresores</p>
+  </div>
+</div>

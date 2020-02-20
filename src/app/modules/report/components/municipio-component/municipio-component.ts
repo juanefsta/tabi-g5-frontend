@@ -9,7 +9,7 @@ import { centros_municipio } from '../../../db_json_data';
 export class MunicipioComponent {
 
     single: any[];
-    view: any[] = [500, 250];
+    view: any[] = [750, 150];
   
     colorScheme = {
       domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']

@@ -7,20 +7,20 @@ import { nacionalidades_victimas } from '../../../db_json_data';
   styleUrls: ['./nacionalidades-component.css']
 })
 export class NacionalidadesComponent {
-  view: any[] = [2000, 800];
+  view: any[] = [1000, 750];
 
   // options
   showXAxis: boolean = true;
   showYAxis: boolean = true;
-  gradient: boolean = false;
+  gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  yAxisLabel: string = 'Country';
+  yAxisLabel: string = 'Nacionalidad';
   showYAxisLabel: boolean = true;
-  xAxisLabel: string = 'Population';
+  xAxisLabel: string = 'Cantidad';
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#52e5ff', '#52ffab', '#e2ff52', '#ff8352', '#a12020', '#d442a3', '#c542d4', '#6442d4', '#569bf0', '#75f0a4', '#b2ed87']
   };
   constructor() {
     Object.assign(this, { nacionalidades_victimas });

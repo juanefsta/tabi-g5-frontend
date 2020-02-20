@@ -7,7 +7,7 @@ import { victima_sexo, sexo_agresor } from '../../../db_json_data';
   styleUrls: ['./llamadas-sexo-component.css']
 })
 export class LLamadasSexoComponent {
-  view: any[] = [700, 400];
+  view: any[] = [850, 400];
 
   // options
   gradient: boolean = true;

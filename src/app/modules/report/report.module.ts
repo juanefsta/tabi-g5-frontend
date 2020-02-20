@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NacionalidadesComponent } from './components/nacionalidades-component/nacionalidades-component';
 import { TiposViolenciaComponent } from './components/tipos-violencia-component/tipos-violencia-component';
 import { VinculosComponent } from './components/vinculos-component/vinculos-component';
+import { MunicipioLlamadoComponent } from './components/municipio-llamados-component/municipio-llamados-component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { VinculosComponent } from './components/vinculos-component/vinculos-comp
     LLamadasSexoComponent,
     NacionalidadesComponent,
     TiposViolenciaComponent,
-    VinculosComponent
+    VinculosComponent,
+    MunicipioLlamadoComponent
   ],
   exports: [
     HorizontalBarTopicsComponent,
@@ -30,7 +32,8 @@ import { VinculosComponent } from './components/vinculos-component/vinculos-comp
     LLamadasSexoComponent,
     NacionalidadesComponent,
     TiposViolenciaComponent,
-    VinculosComponent
+    VinculosComponent,
+    MunicipioLlamadoComponent
   ],
   imports: [
     CommonModule,

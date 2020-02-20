@@ -7,14 +7,14 @@ import { Component} from '@angular/core';
 })
 export class LLamadasComponent {
 
-  view: any[] = [400, 400];
+  view: any[] = [1000, 300];
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
   };
   value: number = 31448;
   max: number = 48821;
   previousValue: number = 31448;
-  units: string = 'Llamadas en la provincia de Buenos Aires';
+  units: string = 'Llamadas registradas en la línea 144 de la Provincia de Buenos Aires';
 
   constructor() {
   }
