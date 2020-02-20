@@ -8,8 +8,14 @@ export class ApplicationConstants {
     // Centros
     public static GET_CENTROS = 'api/centros/';
 
-    // Municipios
+    // Municipios    
+    public static GET_CANTSINCENTRO = 'api/municipios/cantSinCentro/'
+    public static GET_CANTCONCENTRO = 'api/municipios/cantConCentro/'
+    public static GET_MUNICIPIOBYNAME = 'api/municipios/:nombre'
     public static GET_MUNICIPIOS = 'api/municipios/';
     public static GET_MUNICIPIOSSINCENTROATENCION = 'api/municipios/sinCentroAtencion/'
-    public static GET_MUNICIPIOBYNAME = 'api/municipios/'
+
+    // Lineas
+    public static GET_LLAMADASPORMUNICIPIO = 'api/linea/municipios/';
+
 }

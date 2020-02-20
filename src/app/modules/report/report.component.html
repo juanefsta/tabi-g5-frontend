@@ -1,34 +1,39 @@
-<mat-accordion>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Listado de municipios
-            </mat-panel-title>
-            <mat-panel-description>
-                Centros de atención a la mujer por municipio
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <filtered-list></filtered-list>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Informe detallado
-            </mat-panel-title>
-            <mat-panel-description>
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-tab-group>
-            <mat-tab label="Municipios sin centros">
-                <mun-sin-centro></mun-sin-centro>
-            </mat-tab>
-            <mat-tab label="Municipios con centros">
-                <mun-con-centro></mun-con-centro>
-            </mat-tab>
-            <mat-tab label="Atención Línea 144">
-                <!-- <atencion-linea></atencion-linea> -->
-            </mat-tab>
-        </mat-tab-group>
-    </mat-expansion-panel>
-</mat-accordion>
+<div class="container">
+    <h3>Informes</h3>
+    <p>A continuación se mostrarán algunos gráficos obtenidos del análisis realizado de los datasets públicos de los centros de atención de la mujer de la Provincia de Buenos Aires y del registro correspondiente al año 2018 de la línea telefónica 144.</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <municipio-chart></municipio-chart>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <total-llamadas-chart></total-llamadas-chart>
+        </div>
+        <div class="col-sm">
+            <municipio-llamado-chart></municipio-llamado-chart>
+        </div>
+    </div>
+    <div class="row">
+        <h5>Víctimas y agresores según el género</h5>
+        <llamadas-sexo-chart></llamadas-sexo-chart>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5>Tipos violencia registrados</h5>
+            <tipos-violencia-chart></tipos-violencia-chart>
+        </div>
+        <div class="col-sm">
+            <h5>Vinculos entre agresor y víctima</h5>
+            <vinculos-chart></vinculos-chart>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5>Nacionalidades de lxs víctimas</h5>
+            <nacionalidades-chart></nacionalidades-chart>
+        </div>
+    </div>
+</div>
